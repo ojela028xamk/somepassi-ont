@@ -1,3 +1,20 @@
 body {
     background-color: aqua;
+    width: 960px;
+    margin: auto;
+}
+
+#osio1 {
+    display: inline-block;
+    width: 200px;
+    height: 400px;
+    border: 2px solid blue;
+}
+
+#osio2 {
+    display: inline-block;
+    width: 200px;
+    height: 400px;
+    border: 2px solid red;
+    
 }
