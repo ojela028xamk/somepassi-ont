@@ -328,7 +328,7 @@
         template += '<p class="ysquiz-total-wrong">' + stats.numOfWrong + ' wrong</p>';
         template += '</div>';
         template += '<a href="../index.html"><button>Palaa etusivulle</button></a>'; //jjj
-        template += '<button onClick="window.location.reload();">Yritä uudelleen</button>'; //jjj
+        // template += '<button onClick="window.location.reload();">Yritä uudelleen</button>'; jjj
         settings.wrapper.querySelector('.ysquiz-content').innerHTML = template;
         return;
       }
