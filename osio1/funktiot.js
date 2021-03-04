@@ -5,14 +5,22 @@ const modal = document.getElementById("ilmoitusIkkuna");
 
 function testiSuoritettu() {
     modal.style.display = "none";
-    console.log("suoritettu");
+    hyvaksyttyIkkuna.style.display = "block";
 };
 
 function testiHylatty() {
     modal.style.display = "none";
-    console.log("hylätty");
+    hylattyIkkuna.style.display = "block";
+
+    
+    // disabloi nappulat ja kysymysalue ja yritä myöhemmin uudelleen
     submitButton.hidden = true;
     setTimeout(function(){submitButton.hidden = false;},5000);
+    ilmoitusNappi.hidden = true;
+    setTimeout(function(){ilmoitusNappi.hidden = false;},5000);
+    quiz.style.display = "none";
+    setTimeout(function(){quiz.style.display = "block";},5000);
+    setTimeout(function(){hylattyIkkuna.style.display = "none";},5000);
 };
 
 ilmoitusNappi.onclick = function() {
