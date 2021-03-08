@@ -1,20 +1,33 @@
 body {
-    background-color: aqua;
+    background-color: #d3e0ea;
     width: 960px;
     margin: auto;
+    display: flex;
 }
 
-#osio1 {
+#osio {
     display: inline-block;
     width: 200px;
     height: 400px;
-    border: 2px solid blue;
+    border: 10px solid #276678;
+    border-top: 30px solid #276678;
+    flex: 1;
+    margin: 25px;
+    text-align: center;
+    background-color: #f6f5f5;
 }
 
-#osio2 {
+a:link, a:visited {
+    background-color: white;
+    color: black;
+    border: 5px solid #276678;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
     display: inline-block;
-    width: 200px;
-    height: 400px;
-    border: 2px solid red;
-    
-}
+  }
+  
+  a:hover, a:active {
+    background-color: #276678;
+    color: white;
+  }

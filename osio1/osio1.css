@@ -67,3 +67,18 @@ body{
 	background-color: #d9534f;
 	border-left: 10px solid #7c302d;
   }
+
+  a:link, a:visited {
+    background-color: white;
+    color: black;
+    border: 5px solid #276678;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a:hover, a:active {
+    background-color: #276678;
+    color: white;
+  }
