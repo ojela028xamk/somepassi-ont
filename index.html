@@ -8,18 +8,57 @@
     <title>Somepassi</title>
 </head>
 <body>
+
+
+    <nav id="navigointi">
+        <a href="#" class="navlinkki" onclick="naytaEsittely()"><b>Esittely</b></a>
+        <a href="#" class="navlinkki" onclick="naytaOhjeet()"><b>Ohjeet</b></a>
+        <a href="https://digivoimaahanke.wordpress.com/" target="_blank" class="navlinkki"><b>Digivoimaa-kotisivu</b></a>
+    </nav>
+
+    <div id="ylaosa">
+        <div id="esittely">
+            <h2>Esittely</h2>
+            <p>Somepassi eli ’turvallisen ja vastuullisen sosiaalisen median käytön ajokortti’
+               on osa "Digivoimaa"-hanketta. Somepassin tarkoitus on testata sosiaalisen
+               median osaamista ja ymmärrystä digitaalisessa ympäristössä. 
+            </p>
+        </div>
+        <div id="ohjeet">
+            <h2>Ohjeet</h2>
+            <p>Somepassiin kuuluu kuusi osa-aluetta ja päämääränä on suorittaa kaikki osa-alueet.
+               Jokaisessa osiossa on joukko kirjallisia tai kuvallisia kysymyksiä ja vähintään 
+               80% kysymyksistä per osio pitää olla oikein. Osiota voi yrittää max. kaksi kertaa päivässä.
+            </p>
+        </div>
+    </div>
+
+    <div id="osiot">
     <div id="osio">
-        <h1>Teknologinen osaaminen</h1>
-        <h1><a href="osio1/osio1.html">Avaa</a></h1>         
+        <img src="kuvat/palettikuva.png">
+        <h1>Digitaalinen jalanjälki</h1>
+        <h1><a href="osio1/osio1.html" class="osiolinkki">Avaa</a></h1>
+        <!-- Tämä näytetään kun osio on suoritettu -->
+        <div id="suoritettu"><h1>Suoritettu</h1></div>         
+    </div>   
+    <div id="osio">
+        <img src="kuvat/palettikuva.png">
+        <h1>Turvataidot</h1>
+        <h1><a href="osio1/osio1.html" class="osiolinkki">Avaa</a></h1>
+        <!-- Tämä näytetään kun osio on suoritettu -->
+        <div id="suoritettu"><h1>Suoritettu</h1></div>      
     </div>
     <div id="osio">
-        <h1>Osio 2 kysymykset</h1>
-        <h1><a href="">Avaa</a></h1>      
+        <img src="kuvat/palettikuva.png">
+        <h1>Kiusaaminen somessa</h1>
+        <h1><a href="osio1/osio1.html" class="osiolinkki">Avaa</a></h1>
+        <!-- Tämä näytetään kun osio on suoritettu -->
+        <div id="suoritettu"><h1>Suoritettu</h1></div>          
     </div>
-    <div id="osio">
-        <h1>Osio 3 kysymykset</h1>
-        <h1><a href="">Avaa</a></h1>          
     </div>
 
 </body>
+<script src="osio1/funktiot.js"></script>
+<script src="index.js"></script>
+
 </html>

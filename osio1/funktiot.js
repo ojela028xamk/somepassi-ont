@@ -3,6 +3,7 @@ const ilmoitusNappi = document.getElementById("ilmoitusNappi");
 const suljeNappi = document.getElementById("suljeNappi");
 const modal = document.getElementById("ilmoitusIkkuna");
 
+
 function testiSuoritettu() {
     modal.style.display = "none";
     hyvaksyttyIkkuna.style.display = "block";
