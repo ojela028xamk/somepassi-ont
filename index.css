@@ -16,13 +16,11 @@ body {
 
 h2 {
   font-size: 40px;
-  color: white;
   text-align: center;
 }
 
 p {
   font-size: 25px;
-  color: white;
   text-align: center;
 }
 
@@ -54,21 +52,24 @@ p {
 }
 
 #osiot {
-  display: flex;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 40px;
+  row-gap: 60px;
 }
 
 img {
   width: 80%;
-  border: 5px solid white;
   border-radius: 10%;
   margin-top: -25px;
+  border: 3px solid #ff5a6b;
 }
 
 #osio {
     display: inline-block;
-    min-height: 400px;
-    flex: 1;
-    margin: 15px;
+    min-height: 350px;
     text-align: center;
     background-color: #363636;
     color: white;
@@ -79,12 +80,13 @@ img {
 }
 
 .osiolinkki:link, .osiolinkki:visited {
-    background: linear-gradient(to top right, #ff5a83, #fd3347);
+    background: #ff5a6b;
     color: white;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    border-radius: 20px;
   }
   
   .osiolinkki:hover, .osiolinkki:active {
@@ -116,6 +118,7 @@ img {
   border: 2px solid #363636;
   border-radius: 25px;
   background-color: #363636;
+  color: white;
   -webkit-box-shadow: 8px 8px 0px #ff5a6b;
   -moz-box-shadow:    8px 8px 0px #ff5a6b;  
   box-shadow:         8px 8px 0px #ff5a6b;

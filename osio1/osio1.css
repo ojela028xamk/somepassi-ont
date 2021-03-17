@@ -1,15 +1,56 @@
-body{
+#wrapper {
 	font-size: 20px;
 	font-family: sans-serif;
 	color: #333;
 	width:960px;
 	margin:auto;
+	margin-top: 20px;
 }
-.question{
+
+h1 {
+	background-color: #363636;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	font-size: 42px;
+	margin: 0px;
+}
+
+h2 {
+	background-color: #363636;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	font-size: 42px;
+	margin: 0px;
+	margin-bottom: 20px;
+}
+
+#teoriaOsa {
+	display: flex;
+	height: 300px;
+}
+
+.teoriaTeksti{
+	flex: 2;
+}
+
+.teoriaKuva {
+	flex: 1;
+}
+
+img {
+	max-width: 100%;
+    max-height: 100%;
+}
+
+.question {
 	font-weight: 600;
 }
 .answers {
   margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 .answers label{
   display: block;
