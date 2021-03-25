@@ -24,8 +24,7 @@
             answers.push(
               `<label>
                 <input type="radio" name="question${questionNumber}" value="${letter}">
-                ${letter} :
-                ${currentQuestion.answers[letter]}
+                <p id="text">${currentQuestion.answers[letter]}</p>
               </label>`
             );
           }
@@ -113,10 +112,10 @@
         {
           question: "Tuntematon henkilö lähettää sinulle Instagramissa yksityisviestin. Mitä näistä viesteistä EI lasketa uhkailuksi?",
           answers: {
-            a: "Lähetä rahaa mun tilille tai ilmiannan sun profiilin asiattomasta materiaalista.",
-            b: "Lähetä mulle alastonkuvia itsestäsi tai kerron sun mutsille noista kuvista, jossa poltat röökiä.",
-            c: "Anna mulle toi skini tos pelis tai mä tuun sun kotiovelle. Mä tiiän missä sä asut.",
-            d: "Lähetä mulle ystäväpyyntö, mun mielestä sulla on upea profiili."
+            a: '"Lähetä rahaa mun tilille tai ilmiannan sun profiilin asiattomasta materiaalista!"',
+            b: '"Lähetä mulle alastonkuvia itsestäsi tai kerron sun mutsille noista kuvista, jossa poltat röökiä."',
+            c: '"Anna mulle toi skini tos pelis tai mä tuun sun kotiovelle. Mä tiiän missä sä asut."',
+            d: '"Lähetä mulle ystäväpyyntö, mun mielestä sulla on upea profiili."'
           },
           correctAnswer: "d"
         },
@@ -133,9 +132,9 @@
         {
           question: "Sähköpostiin saattaa välillä ilmestyä niin sanottua roskapostia. Mikä seuraavista vaihtoehdoista EI ole roskapostia?",
           answers: {
-            a: "Hei, oletko kuullut tosta Big Money –verkkosivustosta? Meille tulee niiltä mailia kokoajan!",
-            b: "Myynnissä uusi rikkapölynimuri nyt vain 29,99€. Saatavilla vain rajoitetun ajan!",
-            c: "Olet voittanut lotossa 3 miljoona euroa! Lunasta voittasi vierailemalla sivulle https://bigmoneyboom.com/prizes"
+            a: '"Hei, oletko kuullut tosta Big Money –verkkosivustosta? Meille tulee niiltä mailia kokoajan!"',
+            b: '"Myynnissä uusi rikkapölynimuri nyt vain 29,99€. Saatavilla vain rajoitetun ajan!"',
+            c: '"Olet voittanut lotossa 3 miljoona euroa! Lunasta voittasi vierailemalla sivulle https://bigmoneyboom.com/prizes"'
           },
           correctAnswer: "a"
         }
