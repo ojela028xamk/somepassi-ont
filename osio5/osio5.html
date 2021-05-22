@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../osio_graf.css">
+    <title>Tekijänoikeudet</title>
+</head>
+<body onload="onkoSuoritettu()">
+
+    <div id="banner">
+    <img src="../kuvat/osio_banneri_osio5-01.png" class="banneri"></img>
+    <h1>TEKIJÄNOIKEUDET &#9995;</h1>
+    </div>
+        
+    <a href="../index.html">&lt;&lt; Takaisin etusivulle</a>
+
+    <!-- Teoriaosio -->
+    
+    <div id="teoriaOsa">
+        <h3>Tekijänoikeudet</h3>
+        <p>
+        <b>Tekijänoikeusjärjestö Kopiosto kuvailee tekijänoikeuksia seuraavasti:</b>
+        </p>
+        <p>Tekijänoikeus on luovan työn tekijälle kuuluva määräämisoikeus, josta säädetään tekijänoikeuslaissa ja 
+            tekijänoikeusasetuksessa. Luovan työn tekijöitä, joilla on tekijänoikeuksia, voivat olla muun muassa 
+            kirjailijat, kuvataiteilijat, valokuvaajat, käsikirjoittajat, ohjaajat, koreografit, säveltäjät, 
+            sanoittajat tai kääntäjät. Tällä sivulla voit tutustua tekijänoikeuden perusteisiin.</p>
+        <p>Lue aiheesta lisää alla olevasta linkistä ja käy läpi seuraavat osiot:
+            <ul>
+                <li>Tekijänoikeuden syntyminen</li>
+                <li>Tekijänoikeuden voimassaoloaika</li>
+                <li>Tekijänoikeudellisen suojan sisältö</li>
+                <li>Tekijänoikeudellisen suojan kohde</li>
+              </ul>  
+            <a href="https://www.kopiosto.fi/kopiosto/tekijanoikeustietoa/tekijanoikeuden-abc/" target="_blank">Tekijänoikeuden ABC</a>
+        </p>
+        <div id="teoriaOsaHuom">
+            <p>Huom!</p>
+            <p>Lue materiaalit ennen kuin vastaat kysymyksiin.
+               Kysymysosiota voi yrittää max. kaksi kertaa päivässä (joka 12 tunti).
+            </p>
+        </div>
+    </div>
+
+    <!-- Kysymysosio -->
+
+    <img src="../kuvat/kysymys_banneri-01.png" class="banneri2"></img>
+
+    <div id="quiz"></div>
+    <button id="ilmoitusNappi">Lähetä vastaukset</button>
+    <div id="results"></div>
+
+    <div id="ilmoitusIkkuna" class="modal">
+        <div class="modal-content">
+            <h4>Haluatko varmasti lähettää vastaukset?</h4>
+            <button id="submit">Lähetä</button>
+            <button id="suljeNappi">Palaa takaisin</button>
+        </div>
+    </div>
+
+    <h1 id="naytaLaskuri">Yritä myöhemmin uudelleen</h1>
+    <div id="countdown"></div>
+    <!-- Hyväksytty ja hylätty ikkunat -->
+    <div id="hyvaksyttyIkkuna">
+        <img src="../kuvat/hyvaksytty_ikkuna-01.png"></img>
+    </div>
+    <div id="hylattyIkkuna">
+        <img src="../kuvat/hylatty_ikkuna-01.png"></img>
+    </div>
+
+    
+
+</body>
+<script src="osio5.js"></script>
+</html>

@@ -7,7 +7,6 @@ Paletti
 #ff5a6b red 
 */
 
-
 body {
     background-color: #00a7ff;
     width: 960px;
@@ -37,7 +36,6 @@ p {
   text-decoration: none;
   display: inline-block;
   font-family: "Lucida Console", "Courier New", monospace;
-
 }
 
 .navlinkki:hover {
@@ -47,24 +45,28 @@ p {
 #ylaosa {
   height: 300px;
   width: 100%;
-  background-image: url("kuvat/ylaosa_tausta.png");
+  background-image: url("kuvat/ylaosa_tausta-01.png");
   background-repeat: no-repeat;
 }
 
 #osiot {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin: 50px 20px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 40px;
   row-gap: 60px;
 }
 
-img {
+.osiologo {
   width: 80%;
   border-radius: 10%;
   margin-top: -25px;
-  border: 3px solid #ff5a6b;
+  border: 5px solid #ff5a6b;
+}
+
+.etusivulogo {
+  width: 100%;
+  margin-top:20px;
 }
 
 #osio {
@@ -94,10 +96,10 @@ img {
     color: #363636;
   }
 
-#suoritettu {
-  width: 100%;
-  height: 50px;
-  background:yellowgreen;
+#suoritettu1, #suoritettu2, #suoritettu3, #suoritettu4, #suoritettu5, #suoritettu6 {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
   display: none;
 }
 
@@ -123,3 +125,43 @@ img {
   -moz-box-shadow:    8px 8px 0px #ff5a6b;  
   box-shadow:         8px 8px 0px #ff5a6b;
 }
+
+/* Media Queryt */
+@media only screen and (max-width: 768px) {
+  #osiot {
+    grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+  #osiot { 
+    grid-template-columns: 1fr; 
+    }
+
+  #osio {
+    display: inline;
+    min-height: 0px;
+    padding: 30px 0px;
+    text-align: left;
+    border-radius: 0px;
+  }
+  .osiologo {
+    float: left;
+    width: 25%;
+    border-radius: 0%;
+    margin: 0px 20px;
+    border: 5px solid #ff5a6b;
+  }
+  h1 {
+    display: block;
+    font-size: 3em;
+    padding: 0px;
+    margin: 10px;
+    padding-left: 20px;
+  }
+  .osiolinkki {
+    display: block;
+  }
+
+}
+
