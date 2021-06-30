@@ -1,22 +1,17 @@
 {
-  "name": "somepassi-ont",
+  "name": "somepassi-herokuapp",
   "version": "1.0.0",
   "description": "somepassi",
-  "main": "index.html",
+  "main": "index.js",
   "scripts": {
     "start": "node index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ojela028xamk/somepassi-ont.git"
   },
   "keywords": [
     "somepassi"
   ],
   "author": "Jere Länsipii",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ojela028xamk/somepassi-ont/issues"
-  },
-  "homepage": "https://github.com/ojela028xamk/somepassi-ont#readme"
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }

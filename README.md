@@ -1,2 +1,0 @@
-# somepassi-ont
-Somepassi opinnäytetyö

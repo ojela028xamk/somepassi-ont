@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../osio_graf.css">
+    <title>Turvataidot</title>
+</head>
+<body onload="onkoSuoritettu()">
+
+    <div id="banner">
+    <img src="../kuvat/osio_banneri_osio2-01.png" class="banneri"></img>
+    <h1>TURVATAIDOT &#128274;</h1>
+    </div>
+        
+    <a href="../index.html">&lt;&lt; Takaisin etusivulle</a>
+
+    <!-- Teoriaosio -->
+    
+    <div id="teoriaOsa">
+        <h3>Turvallinen netinkäyttö ja groomaus</h3>
+        <p><b>Turvallinen netinkäyttö</b></p>
+        <p>Kun kirjoitat sisältöä tai lisäilet kuviasi nettiin, muista, että ne saattavat säilyä siellä ikuisesti
+             kaikkien nähtävänä. Nolo kuva saattaa siis tulla vastaan vielä kymmenen vuoden päästäkin, vaikka 
+             luulit poistaneesi sen muiden näkyviltä.
+        </p>
+        <p>Lue lisää turvallisesta netinkäytöstä nuortenelämää.fi nettisivulta. Riittää että luet 
+            tekstiosion, videota ei tarvitse katsoa.
+            <br>
+            <a href="https://www.nuortenelama.fi/elavaa-elamaa/netti-ja-media/turvallinen-netink%C3%A4ytt%C3%B6-523" target="_blank">Lue lisää</a>
+        </p>
+        <p><b>Lapsiin kohdistuva seksuaalinen hyväksikäyttö netissä</b></p>
+        
+        <p>Vieraile alla olevassa riku.fi linkissä ja lue yllä olevaan otsikkoon liittyvä osio.
+            Katso myös siihen liittyvä video.
+            <br>
+            <a href="https://www.riku.fi/oppaat-ja-ohjeet/turvaohjeita-nettiin/" target="_blank">Lue lisää</a>
+        </p>
+        <div id="teoriaOsaHuom">
+            <p>Huom!</p>
+            <p>Lue materiaalit ennen kuin vastaat kysymyksiin.</p>
+        </div>
+    </div>
+
+    <!-- Kysymysosio -->
+
+    <img src="../kuvat/kysymys_banneri-01.png" class="banneri2"></img>
+
+    <div id="quiz"></div>
+    <button id="ilmoitusNappi">Lähetä vastaukset</button>
+    <div id="results"></div>
+
+    <div id="ilmoitusIkkuna" class="modal">
+        <div class="modal-content">
+            <h4>Haluatko varmasti lähettää vastaukset?</h4>
+            <button id="submit">Lähetä</button>
+            <button id="suljeNappi">Palaa takaisin</button>
+        </div>
+    </div>
+
+    <!-- Hyväksytty ja hylätty ikkunat ja laskuri -->
+    <div id="count_laskuri">
+        <div id="countdown"></div>
+    
+        <div id="hyvaksyttyIkkuna">
+            <img src="../kuvat/hyvaksytty_ikkuna-01.png" class="hyvaksyttyKuva"></img>
+        </div>
+        <div id="hylattyIkkuna">
+            <img src="../kuvat/hylatty_ikkuna-01.png" class="hylattyKuva"></img>
+        </div>
+    </div>
+
+</body>
+<script src="osio2.js"></script>
+</html>

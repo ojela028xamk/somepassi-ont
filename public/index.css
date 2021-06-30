@@ -1,0 +1,213 @@
+/*
+Paletti
+#363636 black
+#ffffff white
+#00a7ff blue
+#ffcc00 yellow
+#ff5a6b red 
+*/
+
+body {
+    background-color: #00a7ff;
+    max-width: 960px;
+    margin: auto;
+}
+
+.etusivulogo {
+  width: 100%;
+  margin-top:20px;
+}
+
+/* Fontit */
+
+h2 {
+  font-size: 40px;
+  text-align: center;
+}
+
+p {
+  font-size: 25px;
+  text-align: center;
+}
+
+#suoritettu1, #suoritettu2, #suoritettu3, #suoritettu4, #suoritettu5, #suoritettu6 {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: none;
+}
+
+/* Navigointi */
+
+#navigointi {
+  margin: 20px;
+}
+
+.navlinkki {
+  font-size: 34px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-left: 3px solid white;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.navlinkki:hover {
+  text-decoration: underline;
+}
+
+/* Yläosa */
+
+#ylaosa {
+  height: 300px;
+  width: 100%;
+  background-image: url("kuvat/ylaosa_tausta-01.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#esittely {
+  display: block;
+  width: 80%;
+  margin: auto;
+}
+
+#ohjeet {
+  display: none;
+  width: 80%;
+  margin: auto;
+}
+
+/* Osiot-alue */
+
+#osiot {
+  margin: 70px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 40px;
+  row-gap: 60px;
+}
+
+.osiologo {
+  width: 80%;
+  border-radius: 10%;
+  margin-top: -25px;
+  border: 5px solid #ff5a6b;
+}
+
+#osio {
+    display: inline-block;
+    min-height: 350px;
+    text-align: center;
+    background-color: #363636;
+    color: white;
+    border-radius: 10%;
+    -webkit-box-shadow: 8px 8px 0px #ff5a6b;
+    -moz-box-shadow:    8px 8px 0px #ff5a6b;  
+    box-shadow:         8px 8px 0px #ff5a6b;
+}
+
+.osiolinkki:link, .osiolinkki:visited {
+    background: #ff5a6b;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+}
+  
+.osiolinkki:hover, .osiolinkki:active {
+    background: white;
+    color: #363636;
+}
+
+#ohjeet, #esittely {
+  margin-top: 25px;
+  border: 2px solid #363636;
+  border-radius: 25px;
+  background-color: #363636;
+  color: white;
+  -webkit-box-shadow: 8px 8px 0px #ff5a6b;
+  -moz-box-shadow:    8px 8px 0px #ff5a6b;  
+  box-shadow:         8px 8px 0px #ff5a6b;
+}
+
+/* Media Queryt */
+@media only screen and (max-width: 768px) {
+
+  #ylaosa {
+    height: 100%;
+  }
+
+  #osiot {
+    grid-template-columns: 1fr 1fr;
+    }
+
+  .navlinkki {
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  p {
+    font-size: 3vw;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+  #osiot { 
+    grid-template-columns: 1fr;
+    margin-top: 25px;
+    row-gap: 40px;
+    }
+
+  #osio {
+    display: inline;
+    min-height: 0px;
+    padding: 20px 0px;
+    text-align: left;
+    border-radius: 0px;
+  }
+
+  .osiologo {
+    float: left;
+    width: 30%;
+    border-radius: 0%;
+    margin: 0px 10px;
+    border: 5px solid #ff5a6b;
+  }
+
+  h1 {
+    display: block;
+    font-size: 5.8vw;
+    margin: 3px;
+  }
+
+  .osiolinkki {
+    display: block;
+  }
+
+  h2 {
+    font-size: 6vw;
+    text-align: center;
+  }
+
+ 
+  #suoritettu1, #suoritettu2, #suoritettu3, #suoritettu4, #suoritettu5, #suoritettu6 {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+}
+
+@media only screen and (max-width: 425px) {
+
+  .navlinkki {
+    font-size: 24px;
+  }
+
+}

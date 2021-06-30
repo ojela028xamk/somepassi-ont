@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Somepassi</title>
+</head>
+<body>
+<!-- <body onload="localStorage.clear();"> -->
+
+    <img src="kuvat/etusivu_logo-01.png" alt="etusivun logo" class="etusivulogo">
+
+    <nav id="navigointi">
+        <a href="#" class="navlinkki" onclick="naytaEsittely()"><b>Esittely</b></a>
+        <a href="#" class="navlinkki" onclick="naytaOhjeet()"><b>Ohjeet</b></a>
+        <a href="https://digivoimaahanke.wordpress.com/" target="_blank" class="navlinkki"><b>Digivoimaa-kotisivu</b></a>
+    </nav>
+
+    <div id="ylaosa">
+        <div id="esittely">
+            <h2>Esittely</h2>
+            <p>Somepassi eli ’turvallisen ja vastuullisen sosiaalisen median käytön ajokortti’
+               on osa "Digivoimaa"-hanketta. Somepassin tarkoitus on testata sosiaalisen
+               median osaamista ja ymmärrystä digitaalisessa ympäristössä. 
+            </p>
+        </div>
+        <div id="ohjeet">
+            <h2>Ohjeet</h2>
+            <p>Somepassiin kuuluu kuusi osa-aluetta ja päämääränä on suorittaa kaikki osa-alueet.
+               Jokaisessa osiossa on joukko kirjallisia tai kuvallisia kysymyksiä ja vähintään 
+               80% kysymyksistä per osio pitää olla oikein.
+            </p>
+        </div>
+    </div>
+
+    <div id="osiot">
+    <div id="osio">
+        <img src="kuvat/osio1_kuva.png" class="osiologo">
+        <h1>Digijälki</h1>
+        <h1><a href="osio1/osio1.html" class="osiolinkki">Avaa</a></h1>
+        <!-- Tämä näytetään kun osio on suoritettu -->
+        <h1 id="suoritettu1">&#10004; Suoritettu</h1>       
+    </div>   
+    <div id="osio">
+        <img src="kuvat/osio2_kuva.png" class="osiologo">
+        <h1>Turvataidot</h1>
+        <h1><a href="osio2/osio2.html" class="osiolinkki">Avaa</a></h1>
+        <!-- Tämä näytetään kun osio on suoritettu -->
+        <h1 id="suoritettu2">&#10004; Suoritettu</h1>      
+    </div>
+    <div id="osio">
+        <img src="kuvat/osio3_kuva.png" class="osiologo">
+        <h1>Nettikiusaaminen</h1>
+        <h1><a href="osio3/osio3.html" class="osiolinkki">Avaa</a></h1>
+        <!-- Tämä näytetään kun osio on suoritettu -->
+        <div id="suoritettu3"><h1>&#10004; Suoritettu</h1></div>          
+    </div>
+    <div id="osio">
+        <img src="kuvat/osio4_kuva.png" class="osiologo">
+        <h1>Hyvinvointi</h1>
+        <h1><a href="osio4/osio4.html" class="osiolinkki">Avaa</a></h1>
+        <!-- Tämä näytetään kun osio on suoritettu -->
+        <div id="suoritettu4"><h1>&#10004; Suoritettu</h1></div>         
+    </div>   
+    <div id="osio">
+        <img src="kuvat/osio5_kuva.png" class="osiologo">
+        <h1>Tekijänoikeudet</h1>
+        <h1><a href="osio5/osio5.html" class="osiolinkki">Avaa</a></h1>
+        <!-- Tämä näytetään kun osio on suoritettu -->
+        <div id="suoritettu5"><h1>&#10004; Suoritettu</h1></div>      
+    </div>
+    <div id="osio">
+        <img src="kuvat/osio6_kuva.png" class="osiologo">
+        <h1>Tunnekuohut</h1>
+        <h1><a href="osio6/osio6.html" class="osiolinkki">Avaa</a></h1>
+        <!-- Tämä näytetään kun osio on suoritettu -->
+        <div id="suoritettu6"><h1>&#10004; Suoritettu</h1></div>          
+    </div>
+    </div>
+
+</body>
+<script src="index.js">
+   
+</script>
+</html>

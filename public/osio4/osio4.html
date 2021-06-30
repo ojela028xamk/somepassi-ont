@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../osio_graf.css">
+    <title>Hyvinvointi</title>
+</head>
+<body onload="onkoSuoritettu()">
+
+    <div id="banner">
+    <img src="../kuvat/osio_banneri_osio4-01.png" class="banneri"></img>
+    <h1>HYVINVOINTI &#128151;</h1>
+    </div>
+        
+    <a href="../index.html">&lt;&lt; Takaisin etusivulle</a>
+
+    <!-- Teoriaosio -->
+    
+    <div id="teoriaOsa">
+        <h3>Stressi ja some-ergonomia</h3>
+        <p>Lue läpi Digivoimaa-hankkeen sivuilta seuraavat materiaalit liittyen stressiin ja some-ergonomiaan:
+        <br>
+        <a href="https://digivoimaahanke.files.wordpress.com/2020/12/stressi.pdf" target="_blank">Stressi</a>
+        <br>
+        <a href="https://digivoimaahanke.files.wordpress.com/2020/12/some-ergonomia.pdf" target="_blank">Some-ergonomia</a>
+        </p>
+        <div id="teoriaOsaHuom">
+            <p>Huom!</p>
+            <p>Lue materiaalit ennen kuin vastaat kysymyksiin.</p>
+        </div>
+    </div>
+
+    <!-- Kysymysosio -->
+
+    <img src="../kuvat/kysymys_banneri-01.png" class="banneri2"></img>
+
+    <div id="quiz"></div>
+    <button id="ilmoitusNappi">Lähetä vastaukset</button>
+    <div id="results"></div>
+
+    <div id="ilmoitusIkkuna" class="modal">
+        <div class="modal-content">
+            <h4>Haluatko varmasti lähettää vastaukset?</h4>
+            <button id="submit">Lähetä</button>
+            <button id="suljeNappi">Palaa takaisin</button>
+        </div>
+    </div>
+
+    <!-- Hyväksytty ja hylätty ikkunat ja laskuri -->
+    <div id="count_laskuri">
+        <div id="countdown"></div>
+    
+        <div id="hyvaksyttyIkkuna">
+            <img src="../kuvat/hyvaksytty_ikkuna-01.png" class="hyvaksyttyKuva"></img>
+        </div>
+        <div id="hylattyIkkuna">
+            <img src="../kuvat/hylatty_ikkuna-01.png" class="hylattyKuva"></img>
+        </div>
+    </div>
+
+</body>
+<script src="osio4.js"></script>
+</html>
